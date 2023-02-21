@@ -1,0 +1,115 @@
+body{
+  background-color: white;
+  padding : 40px;
+  animation-duration: 5s;
+  animation-name: back-change ;
+  animation-iteration-count: 2;
+  animation-duration: 5s;
+  animation-name: back-change ;
+  animation-iteration-count: infinite;
+
+
+}
+hr{
+  border-style: none;
+  border-top-style:dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 30%;
+}
+
+.circular {
+  border-radius: 100%;
+  
+}
+
+.ani {
+  width: 7rem;
+  height: 7rem;
+
+}
+
+.avatar:hover {
+  animation-duration: 0.1s ;
+  animation-name: rotate;
+  animation-iteration-count: 50 ;
+
+}
+
+.ani:hover {
+  animation-duration: 5s ;
+  animation-name: blow;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+ 
+
+}
+
+span {
+  text-decoration: underline;
+
+}
+
+
+@keyframes back-change {
+  0% {
+    background: red;
+  }
+  10% {
+    background: purple;
+  }
+  20% {
+    background: yellow;
+  }
+  30% {
+    background: lightsalmon;
+  }
+  40% {
+    background-color: brown;
+  }
+  50% {
+    background: green;
+  }
+  60% {
+    background-color:darkmagenta;
+  }70% {
+    background-color :chocolate;
+  }80% {
+    background-color: brown;
+  }
+  90% {
+    background-color: lightblue;
+  }
+  100% {
+    background: blue;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blow {
+  0% {
+    width: 6rem;
+    height: 6rem;
+  }
+  50% {
+    width: 15rem;
+    height: 15rem;
+  }
+  100% {
+    width: 6rem;
+    height: 6rem;
+  }
+}
